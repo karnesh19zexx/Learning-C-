@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(){
 
@@ -22,14 +23,15 @@ int main(){
 
     getchar(); //fixes newline issue
     printf("Enter your full name:");
-    fgets(fname,sizeof(name),stdin); // fixes reading whitespace
+    fgets(fname,sizeof(fname),stdin); // fixes reading whitespace
+    fname[strlen(fname) - 1] = '\0';
 
-
+    printf("%s\n",fname);
     printf("%d\n",age);
     printf("%.2f\n",gpa);
     printf("%c\n",grade);
     printf("%s\n",name);
-    printf("%s\n",fname);
+    
 
     return 0;
 }
