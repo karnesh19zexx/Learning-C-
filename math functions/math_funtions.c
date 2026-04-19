@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
 int main(){
@@ -10,8 +11,8 @@ int main(){
 
     //x = sqrt(x);
     //x = round(x);
-    //x = ceil(x);  round down
-    //x = floor(x); round up
+    //x = ceil(x);  //round down
+    //x = floor(x); //round up
     //x = abs(x);
     //x = log(x);
     //x = sin(x);
